@@ -4,45 +4,30 @@
     box-sizing: border-box;
 }
 
-.flexbox-row {
+.flexbox {
     display: flex;
+    flex-flow: row wrap;
+    border: 2px solid #000;
+    margin: 20px;
+    justify-content: space-between;
+    align-items: start;
+    align-content: start;
+    height: 360px;
 }
 
-.flex-items-row {
-    width: 180px;
-    background-color: #f00;
+.flex-item {
+    background-color: #800;
     margin: 10px;
     color: #fff;
     font-size: 40px;
     text-align: center;
+    width: 100px;
 }
 
-.flex-items-row:first-child {
+.flex-item:first-child {
     background-color: #f08080;
 }
 
-.flex-items-row:last-child {
-    background-color: #000;
-}
-
-.flexbox-row-reverse {
-    display: flex;
-    flex-direction: row-reverse;
-}
-
-.flex-items-row-reverse {
-    width: 180px;
-    background-color: #f00;
-    margin: 10px;
-    color: #fff;
-    font-size: 40px;
-    text-align: center;
-}
-
-.flex-items-row-reverse:first-child {
-    background-color: #f08080;
-}
-
-.flex-items-row-reverse:last-child {
+.flex-item:last-child {
     background-color: #000;
 }
