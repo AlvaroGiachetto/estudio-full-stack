@@ -7,8 +7,11 @@
     <title>Picture, Source y Media</title>
 </head>
 <body>
-    <picture>
-        
+    <picture> <!-- Mas semnatico cambia segun la pantalla - y muestar uno si no soporta el otro -->
+        <source src="dalto.webp" type="image/webp">
+        <source media="(max-width: 400px)" srcset="dalto-small.png">
+        <source media="(max-width: 600px)" srcset="dalto-medium.png">
+        <img src="dalto.png">
     </picture>
 </body>
 </html>
