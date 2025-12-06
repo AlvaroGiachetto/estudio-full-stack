@@ -1,33 +1,33 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    background-color: #ccc;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #ccc;
 }
 
 .flexbox {
-    display: flex;
-    flex-flow: row wrap;
-    margin: 20px;
-    align-items: center;
-    border: 2px solid #2c2828;
-    height: 300px;
-    gap: 10px;
+  display: flex;
+  flex-flow: row wrap;
+  margin: 20px;
+  align-items: center;
+  border: 2px solid #2c2828;
+  height: 300px;
+  gap: 10px;
 }
 
 .flex-item {
-    background-color: #000000;
-    color: #fff;
-    font-size: 40px;
-    text-align: center;
-    flex: 1 1 100px;
+  background-color: #000000;
+  color: #fff;
+  font-size: 40px;
+  text-align: center;
+  flex: 1 1 100px;
 }
 
 .flex-item:nth-child(2n) {
-    background-color: #ffffff;
-    color: #000;
+  background-color: #ffffff;
+  color: #000;
 }
 
 .item-5 {
-    align-self: stretch;
+  align-self: stretch;
 }
