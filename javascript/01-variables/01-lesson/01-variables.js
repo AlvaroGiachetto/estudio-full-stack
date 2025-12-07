@@ -16,3 +16,10 @@ console.log(variable1);
 
 variable1 = variable1 + 1;
 console.log(variable1);
+
+const variable2 = 3;
+var variable3 = 3;
+
+console.log(typeof variable2);
+console.log(typeof message);
+
