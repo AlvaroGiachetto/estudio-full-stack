@@ -1,0 +1,7 @@
+let calculation = JSON.parse(localStorage.getItem('calculation')) || '';
+
+function updateCalculation(value) {
+  calculation += value;
+  console.log(calculation);
+  localStorage.setItem('calculation', calculation);
+}
