@@ -1,7 +1,8 @@
-let score = {
-  wins: 0,
-  losses: 0
-};
+let score = JSON.parse(localStorage.getItem('score'));
+
+if (!score) {
+  score = { wins: 0, losses: 0 };
+}
 
 function playGame(guess) {
   const randomNumber = Math.random();
@@ -13,6 +14,8 @@ function playGame(guess) {
   } else {
     score.losses += 1;
   }
+
+  localStorage.setItem('score', JSON.stringify(score));
 
   alert(`Your decision: ${guess}, The coin: ${coin}, ${result}
   Wins: ${score.wins} , Losses: ${score.losses}`);
