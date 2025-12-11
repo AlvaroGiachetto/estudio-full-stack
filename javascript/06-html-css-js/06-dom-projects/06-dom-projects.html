@@ -3,19 +3,22 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="06-dom-projects.css">
   <title>DOM Projects</title>
 </head>
 <body>
   <p>YouTube Subscribe Button</p>
   <button onclick="
   btnSubscribe();
-  " class="js-subscribe-btn">Subscribe</button>
+  " class="js-subscribe-btn subscribe-btn">Subscribe</button>
 
 
   <p>Amazon Shipping Calculator</p>
+  <p>Orders under $40 = +$10 shipping.</p>
+  <p>Orders over $40 = FREE shipping.</p>
   <input type="text" placeholder="Cost of order" class="js-cost-input" onkeydown=" handleCostKeydown(event);">
-  <button onclick="calculateTotal()">Calculate</button>
+  <button onclick="calculateTotal()" class="calculate-btn">Calculate</button>
   <p class="js-total-cost"></p>
-  <script src="05-dom-projects.js"></script>
+  <script src="06-dom-projects.js"></script>
 </body>
 </html>
