@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <button>9a</button>
+  <button class="js-change-btn">9b</button>
+
+  <button onclick="playerChose('heads')">heads</button>
+  <button onclick="playerChose('tails')">tails</button>
+  <p class="js-display"></p>
+
+
+  <input type="text" placeholder="name" class="js-name-input" onkeydown="handleNameKeydown(event);">
+  <button type="submit" onclick="displayName()" >Submit</button>
+  <p class="js-display-name"></p>
+
+
+  <input type="text" class="js-text-input" onkeyup="displayText(event)">
+  <p class="js-text-output"></p>
+
+  <script src="05-exercise.js"></script>
+</body>
+</html>
