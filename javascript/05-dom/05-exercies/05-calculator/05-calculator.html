@@ -3,42 +3,42 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="05-calculator.css">
   <title>Calculator</title>
 </head>
 <body>
+  <p class="js-display"></p>
   <p>
-      <button onclick="updateCalculation('1')">1</button>
-      <button onclick="updateCalculation('2')">2</button>
-      <button onclick="updateCalculation('3')">3</button>
-      <button onclick="updateCalculation(' + ')">+</button>
+      <button onclick="updateCalculation('1')" class="cal-btn">1</button>
+      <button onclick="updateCalculation('2')" class="cal-btn">2</button>
+      <button onclick="updateCalculation('3')" class="cal-btn">3</button>
+      <button onclick="updateCalculation(' + ')" class="operator cal-btn">+</button>
     </p>
 
     <p>
-      <button onclick="updateCalculation('4')">4</button>
-      <button onclick="updateCalculation('5')">5</button>
-      <button onclick="updateCalculation('6')">6</button>
-      <button onclick="updateCalculation(' - ')">-</button>
+      <button onclick="updateCalculation('4')" class="cal-btn">4</button>
+      <button onclick="updateCalculation('5')" class="cal-btn">5</button>
+      <button onclick="updateCalculation('6')" class="cal-btn">6</button>
+      <button onclick="updateCalculation(' - ')" class="operator cal-btn">-</button>
     </p>
 
     <p>
-      <button onclick="updateCalculation('7')">7</button>
-      <button onclick="updateCalculation('8')">8</button>
-      <button onclick="updateCalculation('9')">9</button>
-      <button onclick="updateCalculation(' * ')">*</button>
+      <button onclick="updateCalculation('7')" class="cal-btn">7</button>
+      <button onclick="updateCalculation('8')" class="cal-btn">8</button>
+      <button onclick="updateCalculation('9')" class="cal-btn">9</button>
+      <button onclick="updateCalculation(' * ')" class="operator cal-btn">*</button>
     </p>
 
     <p>
-      <button onclick="updateCalculation('0')">0</button>
-      <button onclick="updateCalculation('.')">.</button>
-      <button onclick="evaluateCalculation()">=</button>
-      <button onclick="updateCalculation(' / ')">/</button>
+      <button onclick="updateCalculation('0')" class="cal-btn">0</button>
+      <button onclick="updateCalculation('.')" class="cal-btn">.</button>
+      <button onclick="evaluateCalculation()" class="cal-btn">=</button>
+      <button onclick="updateCalculation(' / ')" class="operator cal-btn">/</button>
     </p>
 
     <p>
-      <button onclick="clearCalculation()">Clear</button>
+      <button onclick="clearCalculation()" class="cal-btn clear">Clear</button>
     </p>
-    <p class="js-display"></p>
-
     <script src="05-calculator.js"></script>
 </body>
 </html>

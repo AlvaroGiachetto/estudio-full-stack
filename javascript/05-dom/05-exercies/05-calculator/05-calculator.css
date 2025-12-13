@@ -1,0 +1,26 @@
+body {
+  background-color: black;
+}
+
+.js-display {
+  margin-left: 20px;
+  color: #fff;
+  font-size: 50px;
+  margin-bottom: 0;
+}
+.cal-btn {
+  font-size: 30px;
+  color: white;
+  background-color: #949494;
+  height: 60px;
+  width: 60px;
+  border: none;
+  border-radius: 60px;
+}
+
+.operator {
+  background-color: orange;
+}
+.clear {
+  font-size: 20px;
+}
