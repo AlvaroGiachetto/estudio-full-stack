@@ -15,12 +15,21 @@ function calculateTotal() {
   let cost = Number(inputElement.value);
 
   let total = cost;
-  if (total < 40) {
+  if (total < 40 && total > 0) {
+    totalError.classList.remove('error');
     total += 10;
+    document.querySelector('.js-total-cost')
+    .innerHTML = `$${Math.round(total * 100) / 100}`;
+  } else if (total < 0) {
+    totalError = document.querySelector('.js-total-cost');
+    totalError.classList.add('error')
+    totalError.innerText = 'Error: cost cannot be less than $0';
+  } else {
+    totalError.classList.remove('error');
+    document.querySelector('.js-total-cost')
+    .innerHTML = `$${Math.round(total * 100) / 100}`;
   }
 
-  document.querySelector('.js-total-cost')
-    .innerHTML = `$${Math.round(total * 100) / 100}`;
 }
 
 

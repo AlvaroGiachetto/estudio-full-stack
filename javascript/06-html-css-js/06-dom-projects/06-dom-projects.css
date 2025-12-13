@@ -31,3 +31,7 @@ body {
   padding: 12px 20px;
   cursor: pointer;
 }
+
+.error {
+  color: red;
+}

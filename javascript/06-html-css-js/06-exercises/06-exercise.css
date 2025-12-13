@@ -1,0 +1,42 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.amazon-btn {
+  background-color: #ffd814;
+  border: none;
+  padding: 5px 30px;
+  border-radius: 60px;
+}
+
+.uber-btn-rq {
+  border: none;
+  background-color: #000;
+  color: #fff;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+} 
+
+.uber-btn-lt {
+  border: none;
+  background-color: #e6e6e6;
+  padding: 10px 15px;
+  border-radius: 5px;
+  font-weight: bold;
+}
+
+.toggle-button {
+  background-color: rgb(230, 230, 230);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+.is-toggled {
+  background-color: black;
+  color: white;
+}
