@@ -131,3 +131,17 @@ function countWords(words) {
 }
 
 console.log(countWords(['apple', 'grape', 'apple', 'apple']));
+
+for (let i = 1; i < 20; i++) {
+  const num = i;
+
+  if (num % 3 === 0 && num % 5 === 0) {
+    console.log('FizzBuzz');
+  } else if (num % 3 === 0) {
+    console.log('Fizz');
+  } else if (num % 5 === 0) {
+    console.log('Buzz');
+  }
+}
+
+
