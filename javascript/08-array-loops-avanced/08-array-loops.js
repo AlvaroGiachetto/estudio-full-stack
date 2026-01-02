@@ -1,8 +1,7 @@
+// Avanced Functions
 function greeting() {
   console.log('hello');
 }
-
-
 
 // Arrow function
 const sum = (a, b) => {
